@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Tasks - Dashboard</title>
+    <link rel="stylesheet" href="syle.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="app-container">
+        <aside class="sidebar">
+            <div class="profile-section">
+                <div class="avatar">
+                    <img src="img/avatar.png" alt="Jane Doe">
+                </div>
+                <h3>Jane Doe</h3>
+                <p>janedoe@gmail.com</p>
+            </div>
+            <nav class="nav-menu">
+                <div class="nav-item active">
+                    <i class="fa-solid fa-list-check"></i> My Tasks
+                </div>
+                <div class="nav-item">
+                    <i class="fa-solid fa-gear"></i> Settings
+                </div>
+            </nav>
+        </aside>
+
+        <main class="main-content">
+            <header class="top-bar">
+                <i class="fa-solid fa-sun theme-toggle"></i>
+            </header>
+
+            <section class="todo-container">
+                <h1>My Tasks</h1>
+                
+                <div class="input-section">
+                    <input type="text" id="taskInput" placeholder="Type your task here...">
+                    <button id="addBtn"><i class="fa-solid fa-plus"></i> Add</button>
+                </div>
+
+                <div class="filter-bar">
+                    <div class="tabs">
+                        <span id="allTab" class="active">All</span>
+                        <span id="activeTab">Active</span>
+                        <span id="completedTab">Completed</span>
+                    </div>
+                    <div id="countDisplay">0 tasks left</div>
+                </div>
+
+                <div id="taskList" class="task-list">
+                    </div>
+            </section>
+
+            <footer class="footer">© 2025</footer>
+        </main>
+    </div>
+
+    <script src="sscript.js"></script>
+</body>
+</html>
